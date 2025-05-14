@@ -1,0 +1,9 @@
+H=20
+L=20
+B=20
+h=3
+r=1
+volume_tank=H*L*B
+volume_glass=3.14*(r**2)*h
+glasses=int(volume_tank//volume_glass)
+print("Glasses of milk =",glasses,"glasses")
