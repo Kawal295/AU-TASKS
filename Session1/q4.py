@@ -1,0 +1,1 @@
+coordinate1=int(input)
