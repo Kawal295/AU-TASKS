@@ -1,13 +1,11 @@
 heads=int(input("Enter heads - "))
 legs=int(input("Enter  legs - "))
-flag=False
-j=0
-for i in range(heads+1):
-    j=heads-i
-    if(legs==((4*i)+(2*j))):
-        print("Dogs - ",i)
-        print("Chicken - ",j)
-        flag=True
-        break
-if(flag==False):
-    print("not possible")    
+#dogs+chicken=heads
+#4*dogs+2*chicken=legs
+dogs=legs//2 - heads
+chicken=heads - dogs
+if(4*dogs + 2*chicken)!=legs or dogs<0 or chicken<0:
+    print("NOT POSSIBLE")
+else:
+    print("no. of dogs - ",dogs)
+    print("no. of chicken - ",chicken)    
